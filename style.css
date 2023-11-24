@@ -1,0 +1,735 @@
+/* fuente */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* iconos de google fonts */
+@font-face {
+  font-family: 'Material Icons';
+  src: url(https://example.com/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*header*/
+header {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 1;
+  /*sin esto los botones se ven arriba del header*/
+}
+
+header a {
+  color: #DE4913;
+}
+
+header img {
+  height: 2%;
+}
+
+.flex-nav {
+  display: flex;
+  list-style: none;
+  white-space: nowrap;
+  overflow-x: auto;
+  padding: 0.5%;
+}
+
+.flex-nav li {
+  margin-right: 10px;
+}
+
+/*agregar esto al replit*/
+.grey-background1{
+  background-color:#D9D9D9;
+  padding-top: 25%;
+}
+
+.grey-background2{
+  background-color:#D9D9D9;
+  padding-top: 3%;
+  height:max-content;
+}
+
+/* IDs */
+
+#bienvenida {
+  background: url("imagenes/libros.png") top/cover no-repeat;
+  padding: 10% 0% 45%;
+  margin: 15% 0 0 0;
+}
+
+#top3 {
+  background-image: url(imagenes/huellas_transparentes_grupo.png);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
+.apps{
+  width:30%;
+}
+
+.margen-iyd6 {
+  margin-right: 10%;
+  margin-left: 20%;
+}
+
+/*ids cato*/
+#fondo-soles{
+  background-image:url(imagenes/blurred_soless.png);
+  background-size:cover;
+}
+#fondo-biblioteca{
+  background-image:url(imagenes/libreria-.jpg);
+  background-size:cover;
+}
+#circulo-amarillo{
+  padding: 10% 0% 45%;
+  background-image:url(imagenes/img-circ-amarillo.png);
+  background-size:cover
+}
+#pad-top{
+  padding-top:10%;
+}
+
+#stephenking{
+width: 250px;
+}
+
+/*id s maga*/
+#titulo-envios{
+margin-top: 25%;
+width: 60%;
+}
+
+#t-envios-fondo {
+  background-image: url(imagenes/illusfabrica.png);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
+#proceso {
+  padding-bottom: 2%;
+}
+
+#testimonios img {
+width: 50%;
+}
+
+#resenas-titulo {
+  margin-top: 20%;
+  position: relative
+}
+
+#resenas-titulo p,h1{
+  position: relative
+}
+
+#resenas-titulo:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-image: url(imagenes/libros-revistas.jpeg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+#fondo-cursos {
+  background-image: url(imagenes/cursos_principal.png);
+  background-position: 100% 50%;
+  background-size: cover;
+  margin-top: 15%;
+  padding: 10% 0% 45%;
+}
+
+#landing{
+  background-image: url(imagenes/libros-naranja-bg.jpg);
+}
+
+/* quienes somos IDs */
+#inicio {
+  background: url("imagenes/conocepagecat.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 15%;
+}
+
+#inicio h1 {
+  margin-top: 40%;
+}
+
+#sobrepagecat {
+  padding: 8%;
+}
+
+#sobrepagecat h2 {
+  margin: 0% 4% 5% 4%;
+}
+
+#quehacemos {
+  margin: 5%;
+}
+
+#texto1qh {
+  margin: 3%;
+}
+
+#quehacemos img {
+  margin: 4%;
+}
+
+#quehacemos h2 {
+  margin: 5%;
+}
+
+.qhsub1 {
+  margin: 4% 50% 2% 4%;
+}
+
+.qhsub2 {
+  margin: 4% 4% 2% 50%;
+}
+
+.qhcontenidoizquierda {
+  flex-direction: row-reverse;
+}
+
+#nuestroequipo {
+  background-image: url("imagenes/huellas-cat-blanco.png");
+  background-repeat: no-repeat;
+  background-position: 112% 2%;
+  padding: 5% 5% 10% 5%;
+}
+
+#organizaciónnuestroequipo {
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.nuestroequipoarticulos {
+  width: 45%;
+}
+
+#nuestroequipo h2 {
+  margin: 5% 5% 5% 0%;
+}
+
+#nuestroequipo h4 {
+  font-size: 16px;
+  margin-bottom: 7%;
+}
+
+.personasequipo {
+  margin: 8% 0%;
+  box-shadow: 8px 8px 10px #A8370E;
+  width: 150px;
+}
+
+.icononuestroequipo {
+  width: 12%;
+  height: 12%;
+  align-self: flex-end;
+}
+
+#nuestroequipo p {
+  margin: 2% 2% 10% 0%;
+}
+
+#comotrabajamos {
+  background: url(imagenes/fondocomotrabajamos.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 8%;
+}
+
+.comotrabajamosizquierda {
+  width: 80%;
+  margin: 8% 6% 8% 0%;
+  padding: 5% 5% 0% 5%;
+}
+
+.comotrabajamosderecha {
+  margin: 8% 0% 8% 15%;
+  padding: 5% 5% 0% 5%;
+}
+
+.numeroscomotrabajamos {
+  font-size: 90px;
+  color: #E2BD8F;
+  font-weight: bold;
+  position: relative;
+  bottom: -22px;
+}
+
+#preguntasorganizacion {
+  flex-direction: column;
+  align-content: center;
+}
+
+.preguntasfmedio {
+  width: 70%;
+  margin: 3% 3% 5% 3%;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+#preguntasfrecuentes h2 {
+  margin: 3% 0% 5% 0%;
+}
+
+#preguntasfrecuentes h3, p {
+  margin-bottom: 5%;
+}
+
+#asesoramiento {
+  background-image: url(imagenes/huellas-cat-transparentes.png);
+  background-repeat: no-repeat;
+  background-position: 115% 105%;
+  padding: 10% 5% 8% 5%;
+}
+
+#conocemas {
+  width: 223px;
+  margin: 5%;
+}
+/*terminan IDs */
+
+/* Asesoramiento IDs */
+#inicioasesoramiento {
+  background: url(imagenes/fondo-libros-inicio.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 15%;
+}
+
+#inicioasesoramiento h1{
+  margin-top: 40%;
+}
+
+#soporte {
+  padding-bottom: 6%;
+}
+
+#organizacionsoporte {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#titulosoporte {
+  padding: 5% 3%;
+  margin-bottom: 8%;
+}
+
+#soporte div h2 {
+  margin-right: 3%;
+}
+
+.soportederecha {
+  width: 40%;
+  margin: 3%;
+  padding: 5% 2% 5% 2%;
+}
+
+#Otros {
+  width: 25%;
+  margin: 5%;
+}
+
+#vercontacto {
+  width: 45%;
+  margin: 5%;
+}
+
+#soporte p {
+  margin: 6% 3% 6% 3%;
+}
+
+#producción {
+  padding-top: 8%;
+}
+
+#producción h2 {
+  margin: 0% 3% 3% 3%;
+}
+
+#producción h3 {
+  font-size: 20px;
+  margin: 3%;
+}
+
+#producción p {
+  margin: 5% 3% 5% 3%;
+}
+
+.imageneshorizontales {
+  margin: 1% 0% 3% 5%;
+  box-shadow: 8px 8px 10px #AC390F;
+  width: 335px;
+}
+
+#ejemplosproducción {
+  background-image: url(imagenes/huellasblancas-fondo2.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  box-shadow: 4px 4px 10px #68190E inset;
+  padding: 3% 3% 10% 3%;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.libros {
+  box-shadow: 8px 8px 10px #68190E;
+}
+
+#ejemplosproducción p {
+  margin-left: 0%;
+}
+
+#ejemplosproducción div {
+  margin-bottom: 5%;
+}
+
+#producción a {
+  align-self: flex-end;
+}
+
+#distribuidores {
+  padding: 8% 3% 8% 3%;
+}
+
+#titulodistribuidores {
+  width: 100%;
+}
+
+#distribuidores p {
+  margin: 5% 0%;
+}
+
+#distribuidores h2 {
+  margin-right: 8%;
+}
+
+#distribuidores h3 {
+  font-size: 16px;
+}
+
+#distribuidores h4 {
+  font-weight: bold;
+  margin-top: 5%;
+  font-size: 15px;
+}
+
+#distribuidoresinfo {
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+#distribuidoresinfo img {
+  width: 101px;
+}
+
+.lugares {
+  margin: 5% 0% 5% 0%;
+}
+
+#sabermas {
+  width: 223px;
+  margin: 5%;
+}
+
+#fondo-libros {
+  background: url("imagenes/libreria-.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* terminan IDs */
+
+/* texto */
+p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+a {
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 37px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.linklinea {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.boton {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px 20px;
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+h4 {
+  font-family: Inter;
+  margin-bottom: 3%;
+}
+
+.textoclaro {
+  color: #FFF;
+}
+
+.textooscuro {
+  color: #872012;
+}
+
+.texto-n-o {
+  color: #DE4913;
+}
+
+input {
+    margin: 2%;
+    border: 0;
+    height: 26px;
+}
+
+::placeholder {
+    color: white;
+    font-weight: bold;
+    padding: 2%;
+}
+
+input[type="text"] {
+  color: #FFF;
+}
+
+/* flexbox */
+.flexbox {
+  display: flex;
+}
+
+.flex-around {
+  justify-content: space-around;
+}
+
+.flex-evenly {
+  justify-content: space-evenly;
+}
+
+.flex-center {
+  align-items: center;
+}
+
+.flex-between{
+  justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+/* alinear */
+.centro-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.derecha-c {
+  display: flex;
+  align-items: right;
+}
+
+.izquierda-c {
+  display: flex;
+  align-items: left;
+}
+
+.centro-txt {
+  text-align: center;
+}
+
+.derecha-txt {
+  text-align: right;
+}
+
+.izquierda-txt {
+  text-align: left;
+}
+
+/*fondo y color*/
+.fondo-imagen {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bordo {
+  background-color: #872012;
+}
+
+.n-oscuro {
+  background-color: #DE4913;
+}
+
+.n-medio {
+  background-color: #f08628;
+}
+
+.n-claro {
+  background-color: #FFB978;
+}
+
+.blanco {
+  background-color: #FFF;
+}
+
+.gradiente {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFCB00 19.51%, #FFB978 37.27%, #F08628 50%, #DE4913 68.23%, #872012 90.1%);
+}
+
+.gradiente2 {
+  background: linear-gradient(90deg, #F08628 0%, #DE4913 50.52%, #872012 100%);
+}
+
+.amarillo {
+  background-color: #FFCB00;
+}
+
+/*margenes y padding*/
+.margen-icon-der {
+  margin-right: 5px;
+}
+
+.margen-ini {
+  margin-top: 10%;
+}
+
+.margen-g{
+  margin-top: 25%;
+}
+
+.margen-b {
+  margin-bottom: 3%;
+}
+.margen-b7{
+    margin-bottom: 7%;
+}
+.margen-ini-full{
+  margin-top: 20%;
+}
+
+.padding2 {
+  padding: 2%;
+}
+
+.padding3 {
+  padding: 3%;
+}
+
+.padding5 {
+  padding: 5%;
+}
+
+.margen-i5 {
+  margin-left: 5%;
+}
+
+.margen-d5 {
+  margin-right: 5%;
+}
+
+.margen-iyd5 {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.fullancho {
+  display: block;
+}
+
+/*bordes e imagenes*/
+.esquinaredonda {
+  border-radius: 20px;
+}
+
+.esquinaredonda-d {
+  border-radius: 0 20px 20px 0;
+}
+
+.esquinaredonda-i {
+  border-radius: 20px 0 0 20px;
+}
+
+.circular {
+  border-radius: 500px;
+}
+
+.sombra {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.tapa-tamano {
+  height: 150px;
+}
+
+.circ-tamano {
+  height: 150px;
+  width: 150px;
+}
+
+.puntos-slide {
+  height: 15px;
+  width: 15px;
+}
+
+.img-50 {
+  width: 50%;
+}
+
+/* color de iconos (SVG)*/
+.iconos {
+  filter: invert(37%) sepia(94%) saturate(1021%) hue-rotate(350deg) brightness(87%) contrast(99%);
+  height: 30px;
+  flex-wrap: wrap;
+}
+
+#logofooter {
+  height: 50px;
+}
